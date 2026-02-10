@@ -94,7 +94,7 @@ Main endpoint supporting 5 operations: `fibonacci`, `prime`, `lcm`, `hcf`, `AI`
 }
 ```
 
-## 🛡️ Input Validation & Security
+## Input Validation & Security
 
 ### Global Limits
 - Request body size: **10KB max**
@@ -213,49 +213,19 @@ curl -X POST http://localhost:3000/bfhl \
 - Import test cases from `test-cases.js`
 - See detailed test scenarios in `VALIDATION_DOCUMENTATION.md`
 
-## 🌐 Deployment
+## Deployment
 
-### Option 1: Vercel (Recommended)
+### Option 1: Vercel
 
-1. Push code to GitHub
+1. Pushed code to GitHub
 2. Visit [vercel.com](https://vercel.com)
 3. Click **New Project** → Import repository
-4. Add Environment Variables:
+4. Added Environment Variables:
    - `OFFICIAL_EMAIL`
    - `GEMINI_API_KEY`
 5. Deploy
 6. Copy public URL
 
-### Option 2: Railway
-
-1. Visit [railway.app](https://railway.app)
-2. Click **New Project** → Deploy from GitHub
-3. Select repository
-4. Add Environment Variables
-5. Deploy
-6. Copy URL
-
-### Option 3: Render
-
-1. Visit [render.com](https://render.com)
-2. Click **New** → Web Service
-3. Connect GitHub repository
-4. Configure:
-   - **Build Command:** `npm install`
-   - **Start Command:** `npm start`
-5. Add Environment Variables
-6. Deploy
-7. Copy URL
-
-### Option 4: ngrok (Testing Only)
-
-```bash
-# Start local server
-npm start
-
-# In new terminal
-ngrok http 3000
-```
 
 **Note:** ngrok URLs expire and require local server running.
 
@@ -293,7 +263,7 @@ See `test-cases.js` for 60+ test scenarios including:
 # Or import into Postman/Thunder Client
 ```
 
-## 📊 HTTP Status Codes
+## HTTP Status Codes
 
 | Code | Meaning |
 |------|---------|
@@ -340,11 +310,11 @@ For issues or questions, refer to:
 - `VALIDATION_DOCUMENTATION.md` - Detailed validation rules
 - `test-cases.js` - Test examples
 
-## 👨‍💻 Author
+##  Author
 
-**Your Name**  
+**Aditya Pathania (2310990352)**  
 Chitkara University - Class of 2027  
-Email: your.email@chitkara.edu.in
+Email: aditya0352.be23@chitkara.edu.in
 
 ---
 
