@@ -150,8 +150,8 @@ All errors return `is_success: false` with descriptive messages:
 
 ### 1. Clone Repository
 ```bash
-git clone <your-repo-url>
-cd bfhl-api
+git clone <https://github.com/darklegend91/Qualifier-BFHL.git>
+cd Qualifier-BFHL
 ```
 
 ### 2. Install Dependencies
@@ -189,7 +189,7 @@ npm run dev
 npm start
 ```
 
-Server runs at: `http://localhost:3000`
+Server runs at: `https://qualifier-bfhl.vercel.app/`
 
 ### 5. Test the API
 
@@ -209,8 +209,7 @@ curl -X POST http://localhost:3000/bfhl \
   -d '{"prime": [2,4,7,9,11]}'
 ```
 
-**Using Postman/Thunder Client:**
-- Import test cases from `test-cases.js`
+**Using Postman Client:**
 - See detailed test scenarios in `VALIDATION_DOCUMENTATION.md`
 
 ## Deployment
@@ -227,17 +226,13 @@ curl -X POST http://localhost:3000/bfhl \
 6. Copy public URL
 
 
-**Note:** ngrok URLs expire and require local server running.
-
 ##  Project Structure
 
 ```
 bfhl-api/
 ├── server.js                      # Main application
 ├── package.json                   # Dependencies
-├── .env.example                   # Environment template
 ├── .env                          # Your config (gitignored)
-├── test-cases.js                 # Comprehensive test cases
 ├── VALIDATION_DOCUMENTATION.md   # Detailed validation docs
 └── README.md                     # This file
 ```
@@ -246,21 +241,10 @@ bfhl-api/
 
 ### All Test Cases Covered
 
-See `test-cases.js` for 60+ test scenarios including:
-
--  Valid inputs for all operations
--  Boundary conditions (0, 1, max values)
--  Empty inputs
--  Invalid types
--  Array validation
--  Overflow protection
--  Edge cases (negatives, duplicates, etc.)
-
-### Run Manual Tests
+### Ran Manual Tests
 
 ```bash
-# See test-cases.js for curl commands
-# Or import into Postman/Thunder Client
+# import into Postman Client
 ```
 
 ## HTTP Status Codes
@@ -289,7 +273,6 @@ See `test-cases.js` for 60+ test scenarios including:
 
 - **README.md** - Setup and deployment guide
 - **VALIDATION_DOCUMENTATION.md** - Complete validation rules
-- **test-cases.js** - All test scenarios with examples
 
 ##  Submission Checklist
 
@@ -308,7 +291,6 @@ See `test-cases.js` for 60+ test scenarios including:
 
 For issues or questions, refer to:
 - `VALIDATION_DOCUMENTATION.md` - Detailed validation rules
-- `test-cases.js` - Test examples
 
 ##  Author
 
@@ -332,7 +314,5 @@ cp .env.example .env
 npm start
 
 # Test
-curl http://localhost:3000/health
+curl https://qualifier-bfhl.vercel.app/health
 ```
-
-**Good luck with your qualifier! **
